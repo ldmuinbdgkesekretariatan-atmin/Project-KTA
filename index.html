@@ -51,7 +51,15 @@
 
        <!-- Kartu Detail Data -->
        <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm space-y-4">
+
+         <!-- Detail: NIM -->
+         <div class="flex flex-col">
+           <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-0.5">NIM</span>
+           <span id="fakultas" class="text-gray-800 font-semibold text-sm">123910004</span>
+         </div>
          
+         <div class="h-px w-full bg-gray-200"></div>
+
          <!-- Detail: Fakultas -->
          <div class="flex flex-col">
            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-0.5">Fakultas</span>
@@ -100,6 +108,7 @@
           if(profil) {
             // Suntikkan data dari spreadsheet ke HTML
             document.getElementById('nama').innerText = profil.nama;
+            document.getElementById('NIM').innerText = profil.nama;
             document.getElementById('fakultas').innerText = profil.fakultas;
             document.getElementById('jurusan').innerText = profil.jurusan;
             document.getElementById('angkatan').innerText = profil.angkatan;
